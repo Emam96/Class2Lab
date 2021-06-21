@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+    background-color: #39A2DB;
+}
+
+
+header {
+    background-color: #A2DBFA;
+  margin: 5rem 15rem 0rem 15rem;
+  text-align: center;
+  height: 5rem;
+  box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.239);
+  border-radius: 5px;
+}
+
+header h1 {
+    font-family: Open Sans;
+    font-size: 3pc;
+   padding-top: 1rem;
+   color: #053742;
+}
+
+
+main {
+    background-color: #A2DBFA;
+    box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.239);
+  border-radius: 5px;
+  margin: 7rem 15rem 0rem 15rem;
+  padding: 4rem;
+  height: 50rem;
+  text-align: center;
+  font-size: 2pc;
+  font-family: Open Sans;
+  color: #053742;
+}
+
+main button {
+        font-family: Open Sans;
+        font-weight: bolder;
+        font-size: 2pc;
+        color: white;
+        background-color: transparent;
+        border-color: #053742;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        transition: 0.3s;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      
+      main button:hover {
+        background-color: white;
+        color: #A2DBFA;
+      }
+
+
+main p { padding: 0.5rem;}
+
+footer {
+    font-family: Open Sans;
+    font-size: 1.5pc;
+    background-color: #A2DBFA;
+    color: #053742;
+    margin: 5rem 15rem 5rem 15rem;
+    height: 7rem;
+    box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.239);
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+  }
+
+  footer a {
+    font-size: 1.5pc;
+    font-weight: bold;
+    color: #053742;
+    text-decoration: none;
+    padding: 1.5rem;
+    transition: 0.3s;
+    user-select: none;
+  }
+
+  footer p {
+    padding: 1.5rem;
+    user-select: none;
+  }
+
+  footer a:hover {
+    color: #39A2DB;
+}
