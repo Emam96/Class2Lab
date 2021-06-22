@@ -16,7 +16,7 @@ function quizFunction() {
     "I hope you are ready, I suppose that you looked into the pages because the questions are related to it. "
   );
 
-  let age = prompt("Do you think Iam 24?").toLowerCase();
+  let age = prompt("Do you think Iam 24?").toLowerCase();   // Q1
   while (age != "yes" && age != "no" && age != "y" && age != "n") {
     age = prompt("please pick: yes, no");
   }
@@ -34,7 +34,7 @@ function quizFunction() {
       "<p style='color: red;'>Wrong</p>";
   }
 
-  let edu = prompt("Did I graduate from al alBayt university ?").toLowerCase();
+  let edu = prompt("Did I graduate from al alBayt university ?").toLowerCase();  //Q2
   while (edu != "yes" && edu != "no" && edu != "y" && edu != "n") {
     edu = prompt("please pick: yes, no");
   }
@@ -56,7 +56,7 @@ function quizFunction() {
       "<p style='color: green;'>Correct</p>";
   }
 
-  let xp = prompt("Did I worked for Umniah ?").toLowerCase();
+  let xp = prompt("Did I worked for Umniah ?").toLowerCase();     // Q3
   while (xp != "yes" && xp != "no" && xp != "y" && xp != "n") {
     xp = prompt("please pick: yes, no");
   }
@@ -74,7 +74,7 @@ function quizFunction() {
       "<p style='color: red;'>Wrong</p>";
   }
 
-  let city = prompt("Do you think I live in Amman?").toLowerCase();
+  let city = prompt("Do you think I live in Amman?").toLowerCase();     // Q4
   while (city != "yes" && city != "no" && city != "y" && city != "n") {
     city = prompt("please pick: yes, no");
   }
@@ -95,7 +95,7 @@ function quizFunction() {
 
 
 
-  let xpNum = 0;
+  let xpNum = 0;                                                    // Q5
   for (xpNum = 0; xpNum <= 4; xpNum++) {
     let xpNum1 = "How many years of working experience do you think I have?";
     
@@ -134,6 +134,44 @@ function quizFunction() {
     }
   }
 
+
+
+  let drink = ["coffee", "cola", "tea", "juice", "milk", "ice tea", "ice coffee", "water"]    // Q6
+  let drinkq = prompt("What do you think I like to drink in the summer? you can answer by : coffee, cola, tea, juice, milk, ice tea, ice coffee, water").toLowerCase();
+
+  for (let i = 0; i < 6; i++) {
+    if ( drinkq == drink[1] || drinkq == drink[5] || drinkq == drink[6] || drinkq == drink[7]) {
+      document.getElementById("drink").innerHTML =
+        "What do you think I like to drink in the summer? you answered by (" +
+        drinkq +
+        ")";
+
+      document.getElementById("drinkResults").innerHTML =
+        "<p style='color: green;'>Correct</p>";
+
+      alert("that's correct");
+      break;
+    }
+
+    else if (drinkq == drink[0] || drinkq == drink[2] || drinkq == drink[3] || drinkq == drink[4]) {
+      document.getElementById("drink").innerHTML =
+        "What do you think I like to drink in the summer? you answered by (" +
+        drinkq +
+        ")";
+
+      document.getElementById("drinkResults").innerHTML =
+        "<p style='color: red;'>Wrong</p>";
+
+        alert("Try again");
+        drinkq = prompt("What do you think I like to drink in the summer? you can answer by : coffee, cola, tea, juice, milk, ice tea, ice coffee, water").toLowerCase();
+
+      // alert("You missed up!");
+    }
+    }
+    
+
+    
+  }
   
 
   // let fun = prompt("Do you want to know a fun fact about me?").toLowerCase();
@@ -154,6 +192,6 @@ function quizFunction() {
 
   
 
-}
+
 
 // quizFunction();

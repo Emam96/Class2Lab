@@ -9,8 +9,47 @@ body {
     font-family: Open Sans;
     font-size: 3pc;
     padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.239);
     color: #053742;
     background-color: #a2dbfa;
+    border-radius: 5px;
     margin: 5rem auto;
     width: 20rem;
+    user-select: none;
+  }
+
+  li {
+    font-family: Open Sans;
+    font-size: 1.5pc;
+    padding: 1rem;
+    background-color: #a2dbfa;
+    margin: 5rem auto;
+    width: 50rem;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.239);
+    user-select: none;
+
+  }
+
+  footer {
+    font-family: Open Sans;
+    font-size: 1.5pc;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.239);
+    color: #053742;
+    background-color: #a2dbfa;
+    border-radius: 5px;
+    margin: 0rem auto 5rem;
+    width: 15rem;
+
+
+  }
+   
+
+  footer a {
+      text-decoration: none;
+      color: #053742;
+      user-select: none;
   }
