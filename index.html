@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <link rel="stylesheet" href="CSS/reset.css" />
     <link rel="stylesheet" href="CSS/style.css" />
     <script
@@ -16,20 +16,71 @@
   <body>
     <header>
       <h1>About Me</h1>
+      <h2>Emam Shararah</h2>
     </header>
 
+    <div class="navy">
+      <nav>
+        <a href="edu.html">Education</a>
+        <a href="#">Work Experience</a>
+      </nav>
+    </div>
+
     <main>
-      <p>
-        Hello <p id="name" style="color: #E8F0F2;"></p>, My name is Emam, it's nice to have you here visiting my page, you can
-        take a short quiz to get to know me better.
-      </p>
+      <span>
+        Hello <span id="name" style="color: #e8f0f2"></span>, My name is Emam,
+        it's nice to have you here visiting my page, you can take a short quiz
+        to get to know me better. </span
+      ><br />
       <button onclick="quizFunction()">CLICK HERE</button>
-      <p id="age"></p>
-      <p id="edu"></p>
-      <p id="xp"></p>
-      <p id="city"></p>
-      <p id="fun"></p>
-      
+      <br />
+      <table style="width: 100%; height: 50%">
+        <tr>
+          <th>Q</th>
+          <th>A</th>
+        </tr>
+        <br />
+        <tr>
+          <th id="age"></th>
+          <th id="ageResult"></th>
+        </tr>
+        <tr>
+          <th id="edu"></th>
+          <th id="eduResults"></th>
+        </tr>
+        <tr>
+          <th id="xp"></th>
+          <th id="xpResults"></th>
+        </tr>
+        <tr>
+          <th id="city"></th>
+          <th id="cityResults"></th>
+        </tr>
+        <tr>
+          <th id="xpNum"></th>
+          <th id="xpNumResults"></th>
+        </tr>
+        <tr>
+          <th id="drink"></th>
+          <th id="drinkResults"></th>
+        </tr>
+      </table>
+      <br />
+      <span id="finalscore"></span>
+      <hr/ style="height: 5px; ;">
+      <p>My top 10 drinks</p>
+      <ol>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>orange Juice</li>
+        <li>Water</li>
+        <li>Apple Juice</li>
+        <li>Ice tea</li>
+        <li>Ice Coffee</li>
+        <li>any liquid instead of Soda</li>
+        <li>Soda</li>
+      </ol>
     </main>
 
     <footer>
