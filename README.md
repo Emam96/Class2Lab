@@ -28,5 +28,5 @@
 
 
 **I fixed my code form the previous lab and added the new required question, I used a mix between while loops and if statement to preview the first 4 questions. 
-I then used a for loop for the 5th questions after that I used another for loop but it takes the parameters form an array. 
-The score dashboard is made form a function that adds 1 for every correct answer, it works by calling it at every correct input.**
+I then used a for loop for the 5th questions after that I used another for loop for the final question, but this time it takes the parameters form an array. 
+The score dashboard is made from a function that adds +1 for every correct answer, it works by calling it at every correct input.**
