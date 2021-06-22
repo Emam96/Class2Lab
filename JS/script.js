@@ -127,6 +127,20 @@ function quizFunction() {
 
         alert("Try again");
         drinkq = prompt("What do you think I like to drink in the summer? you can answer by : coffee, cola, tea, juice, milk, ice tea, ice coffee, water").toLowerCase();
+    }
+
+        if (drinkq != drink[0] || drinkq != drink[1] || drinkq != drink[2] || drinkq != drink[3] || drinkq != drink[4] || drinkq != drink[5] || drinkq != drink[6] || drinkq != drink[7]) {
+          document.getElementById("drink").innerHTML =
+        "What do you think I like to drink in the summer? you answered by (" +
+        drinkq +
+        ")";
+
+      document.getElementById("drinkResults").innerHTML =
+        "<p style='color: red;'>Wrong</p>";
+
+        alert("Try again");
+        drinkq = prompt("What do you think I like to drink in the summer? you can answer by : coffee, cola, tea, juice, milk, ice tea, ice coffee, water").toLowerCase();
+    
 
       // alert("You missed up!");
     }
