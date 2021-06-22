@@ -95,44 +95,7 @@ function quizFunction() {
 
 
 
-  let xpNum = 0;                                                    // Q5
-  for (xpNum = 0; xpNum <= 4; xpNum++) {
-    let xpNum1 = "How many years of working experience do you think I have?";
-    
-    
-    let xpNum2 = prompt(xpNum1);
-
-    if (xpNum2 === "4") {
-      document.getElementById("xpNum").innerHTML =
-        "How many years of working experience do you think I have? you answered by (" +
-        xpNum2 +
-        ")";
-
-      document.getElementById("xpNumResults").innerHTML =
-        "<p style='color: green;'>Correct</p>";
-
-      alert("that's correct");
-      break;
-    } else if (xpNum2 > 4) {
-      alert("too high");
-    } else if (xpNum2 < 4) {
-      alert("too low");
-    } else {
-      alert("Please try again");
-    }
-
-    if (xpNum2 !== "4") {
-      document.getElementById("xpNum").innerHTML =
-        "How many years of working experience do you think I have? you answered by (" +
-        xpNum2 +
-        ")";
-
-      document.getElementById("xpNumResults").innerHTML =
-        "<p style='color: red;'>Wrong</p>";
-
-      // alert("You missed up!");
-    }
-  }
+  
 
 
 
@@ -169,6 +132,58 @@ function quizFunction() {
     }
     }
     
+
+
+
+
+
+
+
+    let xpNum = 0;                                                    // Q5
+    for (xpNum = 0; xpNum <= 4; xpNum++) {
+      let xpNum1 = "How many years of working experience do you think I have?";
+      
+      
+      let xpNum2 = prompt(xpNum1);
+  
+      if (xpNum2 === "4") {
+        document.getElementById("xpNum").innerHTML =
+          "How many years of working experience do you think I have? you answered by (" +
+          xpNum2 +
+          ")";
+  
+        document.getElementById("xpNumResults").innerHTML =
+          "<p style='color: green;'>Correct</p>";
+  
+        alert("that's correct");
+        break;
+      } else if (xpNum2 > 4) {
+        alert("too high");
+      } else if (xpNum2 < 4) {
+        alert("too low");
+      } else {
+        alert("Please try again");
+      }
+  
+      if (xpNum2 !== "4") {
+        document.getElementById("xpNum").innerHTML =
+          "How many years of working experience do you think I have? you answered by (" +
+          xpNum2 +
+          ")";
+  
+        document.getElementById("xpNumResults").innerHTML =
+          "<p style='color: red;'>Wrong</p>";
+  
+          
+  
+        // alert("You missed up!");
+      }
+    }
+
+
+
+
+
 
     
   }
