@@ -11,10 +11,18 @@ if (userName == "") {
   userName = "User";
 }
 
+
+
 function quizFunction() {
   let confirmation = confirm(
     "I hope you are ready, I suppose that you looked into the pages because the questions are related to it. "
   );
+
+
+  let score = 0
+let scoreCount = function(){
+  score++;
+}
 
   let age = prompt("Do you think Iam 24?").toLowerCase();   // Q1
   while (age != "yes" && age != "no" && age != "y" && age != "n") {
@@ -26,8 +34,9 @@ function quizFunction() {
       "Do you think Iam 24? you answered by (" + age + ")";
     document.getElementById("ageResult").innerHTML =
       "<p style='color: green;'>Correct</p>";
+      scoreCount();
   }
-  if (age == "no" || age == "n") {
+  else if (age == "no" || age == "n") {
     document.getElementById("age").innerHTML =
       "Do you think Iam 24? you answered by (" + age + ")";
     document.getElementById("ageResult").innerHTML =
@@ -47,13 +56,14 @@ function quizFunction() {
     document.getElementById("eduResults").innerHTML =
       "<p style='color: red;'>Wrong</p>";
   }
-  if (edu == "no" || edu == "n") {
+  else if (edu == "no" || edu == "n") {
     document.getElementById("edu").innerHTML =
       "Did I graduate from al alBayt university ?, you answered by (" +
       edu +
       ")";
     document.getElementById("eduResults").innerHTML =
       "<p style='color: green;'>Correct</p>";
+      scoreCount();
   }
 
   let xp = prompt("Did I worked for Umniah ?").toLowerCase();     // Q3
@@ -66,8 +76,9 @@ function quizFunction() {
       "Did I worked for Umniah ? you answered by (" + edu + ")";
     document.getElementById("xpResults").innerHTML =
       "<p style='color: green;'>Correct</p>";
+      scoreCount();
   }
-  if (xp == "no" || xp == "n") {
+  else if (xp == "no" || xp == "n") {
     document.getElementById("xp").innerHTML =
       "Did I worked for Umniah ? you answered by (" + edu + ")";
     document.getElementById("xpResults").innerHTML =
@@ -85,11 +96,12 @@ function quizFunction() {
     document.getElementById("cityResults").innerHTML =
       "<p style='color: red;'>Wrong</p>";
   }
-  if (city == "no" || city == "n") {
+  else if (city == "no" || city == "n") {
     document.getElementById("city").innerHTML =
       "Do you think I live in Amman? you answered by (" + city + ")";
     document.getElementById("cityResults").innerHTML =
       "<p style='color: green;'>Correct</p>";
+      scoreCount();
   }
 
 
@@ -112,6 +124,7 @@ function quizFunction() {
 
       document.getElementById("xpNumResults").innerHTML =
         "<p style='color: green;'>Correct</p>";
+        scoreCount();
 
       alert("that's correct");
       break;
@@ -157,6 +170,7 @@ function quizFunction() {
 
       document.getElementById("drinkResults").innerHTML =
         "<p style='color: green;'>Correct</p>";
+        scoreCount();
 
       alert("that's correct");
       break;
@@ -175,7 +189,7 @@ function quizFunction() {
         drinkq = prompt("What do you think I like to drink in the summer? you can answer by : coffee, cola, tea, juice, milk, ice tea, ice coffee, water").toLowerCase();
     }
 
-        if (drinkq != drink[0] || drinkq != drink[1] || drinkq != drink[2] || drinkq != drink[3] || drinkq != drink[4] || drinkq != drink[5] || drinkq != drink[6] || drinkq != drink[7]) {
+        if (drinkq !== drink[0] || drinkq !== drink[1] || drinkq !== drink[2] || drinkq !== drink[3] || drinkq !== drink[4] || drinkq !== drink[5] || drinkq !== drink[6] || drinkq !== drink[7]) {
           document.getElementById("drink").innerHTML =
         "What do you think I like to drink in the summer? you answered by (" +
         drinkq +
@@ -197,7 +211,9 @@ function quizFunction() {
 
 
 
-
+    document.getElementById("finalscore").innerHTML = score
+    document.getElementById("score").innerHTML = "Your final score is (knowing that the full mark is 6) >>>>"
+    
 
     
 
@@ -208,6 +224,8 @@ function quizFunction() {
 
     
   }
+  
+
   
 
   // let fun = prompt("Do you want to know a fun fact about me?").toLowerCase();
