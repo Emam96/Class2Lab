@@ -110,7 +110,7 @@ let scoreCount = function(){
 
 
   let xpNum = 0;                                                    // Q5
-  for (xpNum = 0; xpNum <= 4; xpNum++) {
+  for (xpNum = 1; xpNum <= 4; xpNum++) {
     let xpNum1 = "How many years of working experience do you think I have?";
     
     
@@ -161,7 +161,7 @@ let scoreCount = function(){
   let drink = ["coffee", "cola", "tea", "juice", "milk", "ice tea", "ice coffee", "water"]    // Q6
   let drinkq = prompt("What do you think I like to drink in the summer? you can answer by : coffee, cola, tea, juice, milk, ice tea, ice coffee, water").toLowerCase();
 
-  for (let i = 0; i < 6; i++) {
+  for (let i = 1; i < 6; i++) {
     if ( drinkq == drink[1] || drinkq == drink[5] || drinkq == drink[6] || drinkq == drink[7]) {
       document.getElementById("drink").innerHTML =
         "What do you think I like to drink in the summer? you answered by (" +
