@@ -11,6 +11,14 @@ if (userName == "") {
   userName = "User";
 }
 
+
+
+
+
+
+
+        // HERE STARTS THE QUIZ
+
 function quizFunction() {
   let confirmation = confirm(
     "I hope you are ready, I suppose that you looked into the pages because the questions are related to it. "
@@ -21,7 +29,10 @@ function quizFunction() {
     score++;
   };
 
-  let age = prompt("Do you think Iam 24?").toLowerCase(); // Q1
+
+         // Q1
+
+  let age = prompt("Do you think Iam 24?").toLowerCase(); 
   while (age != "yes" && age != "no" && age != "y" && age != "n") {
     age = prompt("please pick: yes, no");
   }
@@ -39,7 +50,10 @@ function quizFunction() {
       "<p style='color: red;'>Wrong</p>";
   }
 
-  let edu = prompt("Did I graduate from al alBayt university ?").toLowerCase(); //Q2
+
+      //Q2
+
+  let edu = prompt("Did I graduate from al alBayt university ?").toLowerCase(); 
   while (edu != "yes" && edu != "no" && edu != "y" && edu != "n") {
     edu = prompt("please pick: yes, no");
   }
@@ -61,7 +75,11 @@ function quizFunction() {
     scoreCount();
   }
 
-  let xp = prompt("Did I worked for Umniah ?").toLowerCase(); // Q3
+
+      // Q3
+
+
+  let xp = prompt("Did I worked for Umniah ?").toLowerCase(); 
   while (xp != "yes" && xp != "no" && xp != "y" && xp != "n") {
     xp = prompt("please pick: yes, no");
   }
@@ -79,7 +97,11 @@ function quizFunction() {
       "<p style='color: red;'>Wrong</p>";
   }
 
-  let city = prompt("Do you think I live in Amman?").toLowerCase(); // Q4
+
+
+     // Q4
+
+  let city = prompt("Do you think I live in Amman?").toLowerCase(); 
   while (city != "yes" && city != "no" && city != "y" && city != "n") {
     city = prompt("please pick: yes, no");
   }
@@ -97,7 +119,12 @@ function quizFunction() {
     scoreCount();
   }
 
-  let xpNum = 0; // Q5
+
+
+             // Q5
+
+
+  let xpNum = 0; 
   for (xpNum = 1; xpNum <= 4; xpNum++) {
     let xpNum1 = "How many years of working experience do you think I have?";
 
@@ -141,7 +168,7 @@ function quizFunction() {
  
  
  
- // the last Q
+            // Q6
  
   let drink = [
     "coffee",
@@ -220,28 +247,25 @@ function quizFunction() {
         "What do you think I like to drink in the summer? you can answer by : coffee, cola, tea, juice, milk, ice tea, ice coffee, water"
       ).toLowerCase();
 
-      // alert("You missed up!");
+      
     }
   }
+
+
+
+     // SCORE DASH 
 
   document.getElementById("finalscore").innerHTML = score;
   document.getElementById("score").innerHTML =
     "Your final score is (knowing that the full mark is 6) >>>>";
+
+
+
+
 }
 
-// let fun = prompt("Do you want to know a fun fact about me?").toLowerCase();
-// while (fun != "yes" && fun != "no" && fun != "y" && fun != "n") {
-//   fun = prompt("please pick: yes, no");
-// }
 
-// if (fun == "yes" || fun == "y") {
-//   document.getElementById("fun").innerHTML =
-//     "Iam trying to learn programming so I can retire as soon as possible, Nothing funny about it? Exactly.";
-// }
 
-// if (fun == "no" || fun == "n") {
-//   document.getElementById("fun").innerHTML =
-//     "You didn't even want to hear my funny story? no worries";
-// } cringe
 
-// quizFunction();
+
+
