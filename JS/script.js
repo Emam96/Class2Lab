@@ -32,7 +32,10 @@ function quizFunction() {
 
          // Q1
 
-  let age = prompt("Do you think Iam 24?").toLowerCase(); 
+
+
+         let fun1= function() {
+ let age = prompt("Do you think Iam 24?").toLowerCase(); 
   while (age != "yes" && age != "no" && age != "y" && age != "n") {
     age = prompt("please pick: yes, no");
   }
@@ -49,10 +52,13 @@ function quizFunction() {
     document.getElementById("ageResult").innerHTML =
       "<p style='color: red;'>Wrong</p>";
   }
-
+  } 
+  fun1();
 
       //Q2
 
+
+      let fun2 = function () {
   let edu = prompt("Did I graduate from al alBayt university ?").toLowerCase(); 
   while (edu != "yes" && edu != "no" && edu != "y" && edu != "n") {
     edu = prompt("please pick: yes, no");
@@ -74,11 +80,12 @@ function quizFunction() {
       "<p style='color: green;'>Correct</p>";
     scoreCount();
   }
-
-
+  
+}
+fun2();
       // Q3
 
-
+      let fun3 = function () {
   let xp = prompt("Did I worked for Umniah ?").toLowerCase(); 
   while (xp != "yes" && xp != "no" && xp != "y" && xp != "n") {
     xp = prompt("please pick: yes, no");
@@ -97,9 +104,12 @@ function quizFunction() {
       "<p style='color: red;'>Wrong</p>";
   }
 
-
+}
+fun3();
 
      // Q4
+
+     let fun4= function () {
 
   let city = prompt("Do you think I live in Amman?").toLowerCase(); 
   while (city != "yes" && city != "no" && city != "y" && city != "n") {
@@ -118,12 +128,14 @@ function quizFunction() {
       "<p style='color: green;'>Correct</p>";
     scoreCount();
   }
+}
+fun4();
 
 
 
              // Q5
 
-
+             let fun5= function () {
   let xpNum = 0; 
   for (xpNum = 1; xpNum <= 4; xpNum++) {
     let xpNum1 = "How many years of working experience do you think I have?";
@@ -158,18 +170,19 @@ function quizFunction() {
 
       document.getElementById("xpNumResults").innerHTML =
         "<p style='color: red;'>Wrong</p>";
-
+      
       // alert("You missed up!");
     }
   }
-
+}
+fun5();
  
  
  
  
  
             // Q6
- 
+            let fun6= function () {
   let drink = [
     "coffee",
     "cola",
@@ -251,6 +264,8 @@ function quizFunction() {
     }
   }
 
+}
+fun6();
 
 
      // SCORE DASH 
