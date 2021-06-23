@@ -136,6 +136,13 @@ function quizFunction() {
     }
   }
 
+ 
+ 
+ 
+ 
+ 
+ // the last Q
+ 
   let drink = [
     "coffee",
     "cola",
@@ -145,7 +152,7 @@ function quizFunction() {
     "ice tea",
     "ice coffee",
     "water",
-  ]; // Q6
+  ]; 
   let drinkq = prompt(
     "What do you think I like to drink in the summer? you can answer by : coffee, cola, tea, juice, milk, ice tea, ice coffee, water"
   ).toLowerCase();
