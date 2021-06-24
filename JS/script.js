@@ -20,7 +20,7 @@ if (userName == "") {
         // HERE STARTS THE QUIZ
 
 function quizFunction() {
-  let confirmation = confirm(
+   alert(
     "I hope you are ready, I suppose that you looked into the pages because the questions are related to it. "
   );
 
@@ -36,6 +36,8 @@ document.getElementById("As").innerHTML =
     score++;
   };
 
+
+  alert("Okay, you need to answer by YES or NO, lets start")
 
          // Q1
 
@@ -135,6 +137,7 @@ fun3();
 fun4();
 
 
+alert("This wasn't hard right?! Okay, answer by a number between 1-5")
 
              // Q5
 
@@ -181,7 +184,7 @@ fun4();
 fun5();
  
  
- 
+ alert("We almost finished, here, you need to answer by one of the drinks in the list.")
  
  
             // Q6
@@ -269,6 +272,9 @@ fun5();
 
 }
 fun6();
+
+
+alert("That was fun, you can view your score at the sheet below.")
 
 
      // SCORE DASH 
