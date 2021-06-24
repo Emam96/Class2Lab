@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 body {
-  background-color: #39a2db;
+  
   text-align: center;
 }
 
@@ -11,8 +11,8 @@ h1 {
   padding-top: 1rem;
   padding-bottom: 1.5rem;
   box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.239);
-  color: #053742;
-  background-color: #a2dbfa;
+  color: white;
+  background-color: #810000;
   border-radius: 5px;
   margin: 5rem auto;
   width: 20rem;
@@ -23,12 +23,13 @@ li {
   font-family: Open Sans;
   font-size: 1.5pc;
   padding: 1rem;
-  background-color: #a2dbfa;
+  background-color: #810000;
   margin: 5rem auto;
   width: 50rem;
   border-radius: 5px;
   box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.239);
   user-select: none;
+  color: white;
 }
 
 footer {
@@ -37,8 +38,8 @@ footer {
   padding-top: 1rem;
   padding-bottom: 1.5rem;
   box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.239);
-  color: #053742;
-  background-color: #a2dbfa;
+  color: white;
+  background-color: #810000;
   border-radius: 5px;
   margin: 0rem auto 5rem;
   width: 15rem;
@@ -46,6 +47,6 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #053742;
+  color: white;
   user-select: none;
 }

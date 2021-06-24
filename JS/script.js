@@ -24,6 +24,13 @@ function quizFunction() {
     "I hope you are ready, I suppose that you looked into the pages because the questions are related to it. "
   );
 
+
+  document.getElementById("Qs").innerHTML =
+  "Questions";
+document.getElementById("As").innerHTML =
+  "Answers";
+
+
   let score = 0;
   let scoreCount = function () {
     score++;
@@ -42,13 +49,13 @@ function quizFunction() {
 
   if (age == "yes" || age == "y") {
     document.getElementById("age").innerHTML =
-      "Do you think Iam 24? you answered by (" + age + ")";
+      "Do you think Iam 24? you answered by (YES)";
     document.getElementById("ageResult").innerHTML =
       "<p style='color: green;'>Correct</p>";
     scoreCount();
   } else if (age == "no" || age == "n") {
     document.getElementById("age").innerHTML =
-      "Do you think Iam 24? you answered by (" + age + ")";
+      "Do you think Iam 24? you answered by (NO)";
     document.getElementById("ageResult").innerHTML =
       "<p style='color: red;'>Wrong</p>";
   }
@@ -66,16 +73,12 @@ function quizFunction() {
 
   if (edu == "yes" || edu == "y") {
     document.getElementById("edu").innerHTML =
-      "Did I graduate from al alBayt university ?, you answered by (" +
-      edu +
-      ")";
+      "Did I graduate from al alBayt university ?, you answered by (YES)";
     document.getElementById("eduResults").innerHTML =
       "<p style='color: red;'>Wrong</p>";
   } else if (edu == "no" || edu == "n") {
     document.getElementById("edu").innerHTML =
-      "Did I graduate from al alBayt university ?, you answered by (" +
-      edu +
-      ")";
+      "Did I graduate from al alBayt university ?, you answered by (NO)";
     document.getElementById("eduResults").innerHTML =
       "<p style='color: green;'>Correct</p>";
     scoreCount();
@@ -93,13 +96,13 @@ fun2();
 
   if (xp == "yes" || xp == "y") {
     document.getElementById("xp").innerHTML =
-      "Did I worked for Umniah ? you answered by (" + edu + ")";
+      "Did I worked for Umniah ? you answered by (YES)";
     document.getElementById("xpResults").innerHTML =
       "<p style='color: green;'>Correct</p>";
     scoreCount();
   } else if (xp == "no" || xp == "n") {
     document.getElementById("xp").innerHTML =
-      "Did I worked for Umniah ? you answered by (" + edu + ")";
+      "Did I worked for Umniah ? you answered by (NO)";
     document.getElementById("xpResults").innerHTML =
       "<p style='color: red;'>Wrong</p>";
   }
@@ -118,12 +121,12 @@ fun3();
 
   if (city == "yes" || city == "y") {
     document.getElementById("city").innerHTML =
-      "Do you think I live in Amman? you answered by (" + city + ")";
+      "Do you think I live in Amman? you answered by (YES)";
     document.getElementById("cityResults").innerHTML =
       "<p style='color: red;'>Wrong</p>";
   } else if (city == "no" || city == "n") {
     document.getElementById("city").innerHTML =
-      "Do you think I live in Amman? you answered by (" + city + ")";
+      "Do you think I live in Amman? you answered by (NO)";
     document.getElementById("cityResults").innerHTML =
       "<p style='color: green;'>Correct</p>";
     scoreCount();
@@ -272,7 +275,7 @@ fun6();
 
   document.getElementById("finalscore").innerHTML = score;
   document.getElementById("score").innerHTML =
-    "Your final score is (knowing that the full mark is 6) >>>>";
+    "Your final score is (knowing that the full mark is 6)";
 
 
 
