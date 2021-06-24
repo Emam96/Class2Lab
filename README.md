@@ -25,11 +25,14 @@
 
 1. it was easy, ahmed is great and our work was smooth and fast. I learned some good stuff from him also
 2. The hardest part was pulling the repos again after doing the work, we faced a problem and solved it using the terminal
-3. Im improving at Javascript, better every day
-4. it 2 hours maybe
+3. Im improving at Javascript, better every day,
+4. it took 2 hours maybe,
 
 
-
+## day 4 
+*  its all about styling now. 
+*  I learned a lot, javascript specially, its good to understand javascript finally. 
+*  not a long time, it was ready from the beginning.
 
 
 
